@@ -31,13 +31,16 @@
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#tour">View the tour</a></li>
-								<li><a href="#work">Request a call back</a></li>
-								<li><a href="#about">View my portfolio</a></li>
+								<li><a href="#tour">Take the tour</a></li>
+								<li><a href="#callback">Book a call</a></li>
+								<li><a href="#about">View my listings</a></li>
 								<!-- <li><a href="#contact">Contact</a></li> -->
 								<!-- <li><a href="#elements">Elements</a></li> -->
 							</ul>
 						</nav>
+
+
+						
 					</header>
 
 				<!-- Main -->
@@ -45,10 +48,44 @@
 
 						<!-- Tour -->
 							<article id="tour">
-								<h2 class="major">Tour Marlborough, online</h2>
+								<!-- <h2 class="major">Tour Marlborough, online</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
 								<h4>The property is currently tenanted at <b>R7500.00pm</b></h4>
 								<p>What are you waiting for? <a href="https://html5up.net">Experience Marlborough Park Now</a></p>
+
+								<h3 class="major">Details</h3> -->
+								<div class="table-wrapper">
+									<table>
+										<tbody>
+											<tr>
+												<td>Type of Property</td>
+												<td>Apartment / Flat</td>
+											</tr>
+											<tr>
+												<td>Bathrooms</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>Parking</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>Floor Size</td>
+												<td>36 m²</td>
+											</tr>
+											<tr>
+												<td>Pets Allowed</td>
+												<td>No</td>
+											</tr>
+											<tr>
+												<td>Furnished</td>
+												<td>Yes</td>
+											</tr>
+									</table>
+								</div>
+								<h2 class="strong">What is a virtual tour</h2>
+								<h5 class="strong">A virtual tour allows you to walk through the property from the comfort of your own home.</h5>
+								<h5 class="strong">To enter Marlborough Park virtualy, please leave your name and contact number. Thank you.</h5>
 								<form method="post" action="https://formspree.io/myynlpdv">
 									<div class="fields">
 										<div class="field half">
@@ -59,35 +96,69 @@
 											<label for="email">Email</label>
 											<input type="text" name="email" id="email" />
 										</div>
-										<div class="field">
+										<!-- <div class="field">
 											<label for="message">Message</label>
 											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
+										</div> -->
 										<div class="field">
-											<input type="hidden" name="subscribe" value="no">
-											<label for="checkbox"><input type="checkbox" id="checkbox" name="subscribe" value="yes" checked>Subscribe to our newsletter</label><br><br>
-											<!-- <input type="hidden" name="utf8" value="✓"> -->
+											<input type="checkbox" id="sub" name="sub" value="no">
+											<label for="sub">Subscribe to see new listing</label>
+
+											<!-- <input type="checkbox" name="subscribe" value="no">
+											<label for="checkbox"><input type="checkbox" id="checkbox" name="subscribe" value="yes" checked>Subscribe to our newsletter</label> -->
 										</div>
 
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="submit" value="View the tour" class="primary" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
 							</article>
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
+						<!-- Call-back -->
+							<article id="callback">
+								<h2 class="major">Request a call-back</h2>
+								<!-- 
+									
+									Leave your number for a call
+									Book a meeting with me
+
+								-->
+								<!-- <span class="image main"><img src="images/pic02.jpg" alt="" /></span> -->
+
+								<form method="post" action="https://formspree.io/myynlpdv">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field">
+											<label for="email">Phone Number</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<!-- <div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4"></textarea>
+										</div> -->
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Submit" class="primary" /></li>
+										<!-- <li><input type="reset" value="Reset" /></li> -->
+									</ul>
+								</form>
+
+								<h3 class="major">Book a meeting with me</h3>
+
+								<p>You can book a viewing or a call from me and have it added to our calendars here. So what are you waiting for?
+
 								<!-- Calendly link widget begin -->
 								<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 								<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-								<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/virtualadventures/tour-marlborough'});return false;">I want to explore</a>
+								<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/virtualadventures/tour-marlborough'});return false;">Book a slot with me</a>
 								<!-- Calendly link widget end -->
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								and lets find your dream home.
+								</p>
 							</article>
 
 						<!-- About -->
@@ -375,7 +446,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; 2020: <a href="https://google.com">Landed Virtualy</a>.</p>
 					</footer>
 
 			</div>
